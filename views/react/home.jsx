@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app.jsx';
+import LandingPasge from './Landing/LandingPage.jsx';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<LandingPasge />, document.getElementById('root'));

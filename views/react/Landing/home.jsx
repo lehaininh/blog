@@ -1,11 +1,13 @@
 import React from 'react';
-import '../scss/home.scss';
+import Test2 from './test2.jsx';
+import Test1 from './test1.jsx';
 
 export default class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Testing rendering</h1>
+                <Test1 />
+                <Test2 />
             </div>
         );
     }

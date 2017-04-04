@@ -6,6 +6,7 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: ENTRY_POINT + '/home.jsx',
+    devtool: "source-map",
     module: {
         loaders: [{
             test: /\.jsx?/,
@@ -13,23 +14,30 @@ module.exports = {
             exclude: /node_modules/
         }, {
             test: /\.scss$/,
-            loader: 'style-loader'
-        }, {
-            test: /\.scss$/,
-            loader: 'css-loader',
-            options: {
-                sourceMap: true,
-                modules: true,
-                localIdentName: '[name]__[local]__[hash:base64:5]'
-            }
-        }, {
-            test: /\.scss$/,
-            loader: 'sass-loader',
-            options: {
-                sourceMap: true
-            }
+            loader: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
+                use: [
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                            modules: true,
+                            localIdentName: '[name]__[local]__[hash:base64:5]'
+                        }
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
+                ]
+            })
         }]
     },
+    plugins: [
+        new ExtractTextPlugin('css/style.css')
+    ],
     output: {
         path: BUILD_DIR,
         filename: 'js/bundle.js'

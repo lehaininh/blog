@@ -4,7 +4,7 @@ let app = express();
 app.set('view engine', 'pug');
 app.use('/static', express.static('public'));
 app.get('/', (req, res) => {
-    res.render('index', {title: 'Le Hai Ninh'});
+    res.render('landing', {title: 'Le Hai Ninh'});
 });
 
 console.info('App is running on port 8888');

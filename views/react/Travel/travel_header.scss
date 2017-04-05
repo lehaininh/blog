@@ -7,10 +7,8 @@
     display: inline-block;
     list-style-type: none;
     margin-right: 100px;
-    li > a {
-        text-decoration: none;
-    }
     li:last-child {
+        border-right: none;
     }
     .menu_item {
         padding-left: 20px;

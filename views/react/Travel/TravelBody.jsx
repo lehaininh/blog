@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './landing_body.scss';
+import styles from './travel_body.scss';
 
-export default class LandingBody extends React.Component {
+export default class TravelBody extends React.Component {
     render() {
         return (
             <div className={styles.body}>

@@ -5,7 +5,10 @@ const ENTRY_POINT = path.resolve(__dirname, 'views/react');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: ENTRY_POINT + '/home.jsx',
+    entry: {
+        landing: ENTRY_POINT + '/Landing/landing.jsx',
+        travel: ENTRY_POINT + '/Travel/travel.jsx'
+    },
     devtool: "source-map",
     module: {
         loaders: [{
@@ -36,10 +39,10 @@ module.exports = {
         }]
     },
     plugins: [
-        new ExtractTextPlugin('css/style.css')
+        new ExtractTextPlugin('css/[name].css')
     ],
     output: {
         path: BUILD_DIR,
-        filename: 'js/bundle.js'
+        filename: 'js/[name].js'
     }
 };

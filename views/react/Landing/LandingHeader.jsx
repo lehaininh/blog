@@ -6,9 +6,11 @@ export default class LandingHeader extends React.Component {
         return (
             <div className={styles.body}>
                 <ul className={styles.menu}>
-                    <li className={styles.menu_item}>About</li>
-                    <li className={styles.menu_item}>Blog</li>
-                    <li className={styles.menu_item}>My works</li>
+                    <li className={styles.menu_item}>
+                        <a href="/travel">Travel</a>
+                    </li>
+                    <li className={styles.menu_item}>Programming</li>
+                    <li className={styles.menu_item}>Others</li>
                 </ul>
             </div>
         );

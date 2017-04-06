@@ -5,7 +5,8 @@ import CSSModules from 'react-css-modules';
 class TravelHeader extends React.Component {
     render() {
         return (
-            <div>
+            <div styleName="header">
+                This is the header
             </div>
         );
     }

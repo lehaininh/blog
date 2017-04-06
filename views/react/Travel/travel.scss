@@ -2,3 +2,12 @@
     width: 1200px;
     margin: auto;
 }
+
+.clearfix {
+    visibility: hidden;
+    clear: both;
+}
+
+body {
+    margin-top: 0;
+}

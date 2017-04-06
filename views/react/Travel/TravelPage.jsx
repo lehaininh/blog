@@ -1,6 +1,8 @@
 import React from 'react';
 import TravelHeader from './TravelHeader.jsx';
-import TravelBody from './TravelBody.jsx';
+import TravelPostList from './TravelPostList.jsx';
+import TravelWidget from './TravelWidget.jsx';
+import TravelFooter from './TravelFooter.jsx';
 import CSSModules from 'react-css-modules';
 
 import styles from './travel.scss';
@@ -11,7 +13,12 @@ class TravelPage extends React.Component {
         return (
             <div styleName="container">
                 <TravelHeader />
-                <TravelBody />
+                <div>
+                    <TravelPostList />
+                    <TravelWidget />
+                    <div styleName="clearfix"></div>
+                </div>
+                <TravelFooter />
             </div>
         );
     }

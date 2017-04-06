@@ -1,14 +1,13 @@
-.body {
-    display: block;
-}
-
 .menu {
     float: right;
     display: inline-block;
     list-style-type: none;
     margin-right: 100px;
-    li > a {
+    li a {
         text-decoration: none;
+    }
+    a:visited {
+        color: inherit;
     }
     li:last-child {
     }
@@ -18,4 +17,12 @@
         border-right: 1px solid;
         display: inline;
     }
+}
+
+.clearfix {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }

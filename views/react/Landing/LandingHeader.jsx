@@ -1,18 +1,22 @@
 import React from 'react';
 import styles from './landing_header.scss';
+import CSSModules from 'react-css-modules';
 
-export default class LandingHeader extends React.Component {
+class LandingHeader extends React.Component {
     render() {
         return (
-            <div className={styles.body}>
-                <ul className={styles.menu}>
-                    <li className={styles.menu_item}>
+            <div>
+                <ul styleName="menu">
+                    <li styleName="menu_item">
                         <a href="/travel">Travel</a>
                     </li>
-                    <li className={styles.menu_item}>Programming</li>
-                    <li className={styles.menu_item}>Others</li>
+                    <li styleName="menu_item">Programming</li>
+                    <li styleName="menu_item">Others</li>
                 </ul>
+                <div styleName="clearfix"></div>
             </div>
         );
     }
 }
+
+export default CSSModules(LandingHeader, styles, {allowMultiple: true});

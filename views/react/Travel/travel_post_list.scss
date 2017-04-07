@@ -1,8 +1,15 @@
 @import '../../scss/global.scss';
 
 .post_list {
-    height: 900;
     width: 80%;
     float: left;
-    border: 2px solid blue;
+    padding: 0 5px;
+}
+
+.clearfix {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }

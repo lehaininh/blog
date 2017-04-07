@@ -6,7 +6,7 @@ class TravelFooter extends React.Component {
     render() {
         return (
             <div styleName="footer">
-                this is a footer
+                <span>Copyright © Ninh from scratch, 2017</span>
             </div>
         );
     }

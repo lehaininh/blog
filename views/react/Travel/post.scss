@@ -1,0 +1,18 @@
+@import '../../scss/global.scss';
+
+.post {
+    float: left;
+    margin: 0 10px;
+}
+
+.post_title {
+    font-family: "PostTitle";
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.post_container {
+    float: left;
+    width: 50%;
+}

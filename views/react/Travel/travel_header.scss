@@ -1,6 +1,12 @@
 .header {
     height: 300;
     display: block;
-    border: 1px solid;
     margin-bottom: 10px;
+    background-image: url(/static/resources/img/travel.jpg);
+    background-size: 100% auto;
+    a {
+        display: block;
+        height: 100%;
+    }
 }
+

@@ -6,7 +6,7 @@ class TravelHeader extends React.Component {
     render() {
         return (
             <div styleName="header">
-                This is the header
+                <a href='/'></a>
             </div>
         );
     }

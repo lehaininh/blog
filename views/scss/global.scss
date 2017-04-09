@@ -6,7 +6,11 @@
 @font-face {
     font-family: 'PostTitle';
     src: url('/static/resources/fonts/NotoSans-Bold.ttf');
-    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'PostTimestamp';
+    src: url('/static/resources/fonts/NotoSans-Regular.ttf');
 }
 
 

@@ -10,11 +10,34 @@
             font-family: "PostTitle";
             display: block;
             text-decoration: none;
-            margin-bottom: 10px;
         }
 
         .post_title:visited {
             color: inherit
+        }
+
+        .post_stamp {
+            margin-top: 3px;
+            font-family:: "PostTimestamp";
+            font-size: 11px;
+            color: #757575;
+            .date {
+                font-size: 12px;
+            }
+
+            .post_tag {
+                font-size: 12px;
+                font-weight: bold;
+                text-decoration: none;
+                color: inherit;
+            }
+            .post_tag:visited {
+                color: inherit
+            }
+        }
+
+        .post_tag {
+
         }
     }
 }

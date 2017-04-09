@@ -33,10 +33,10 @@ class Post extends React.Component {
                     </div>
                     {
                         post.photo && (
-                            <img src={post.photo}/>
+                            <div styleName="post_photo" style={{backgroundImage: `url(${post.photo})`}}></div>
                         )
                     }
-                    <p>{post.body}</p>
+                    <p styleName="post_body">{post.body}</p>
                 </div>
             </div>
         );

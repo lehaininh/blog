@@ -4,20 +4,25 @@
     float: left;
     width: 50%;
     .post {
-        float: left;
-        margin: 0 10px;
+        background-color: #f5f5f5;
+        box-shadow: 0px 5px 20px #b1afaf;
+        margin: 10px 10px;
+        padding: 15px 0px 10px 0px;
         .post_title {
-            font-family: "PostTitle";
+            font-family: "General";
             display: block;
             text-decoration: none;
+            margin: 0 10px -10px 15px;
+            font-size: 20px;
         }
 
         .post_title:visited {
-            color: inherit
+            display: block;
+            color: inherit;
         }
 
         .post_stamp {
-            margin-top: 3px;
+            margin: 3px 10px 0px 20px;
             font-family:: "PostTimestamp";
             font-size: 11px;
             color: #757575;
@@ -34,6 +39,20 @@
             .post_tag:visited {
                 color: inherit
             }
+        }
+
+        .post_photo {
+            margin-top: 15px;
+            width: 100%;
+            padding-bottom: 56.25%;
+            background-size: 100% auto;
+        }
+
+        .post_body {
+            font-family: "General";
+            font-size: 15px;
+            margin: 10px 15px 0px 15px;
+            line-height: 170%;
         }
 
         .post_tag {

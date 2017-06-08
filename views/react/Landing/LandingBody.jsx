@@ -10,7 +10,7 @@ export default class LandingBody extends React.Component {
                     <p className={styles.description}>
                         <span className="fa fa-location-arrow"></span> Hanoi, Vietnam<br />
                         Rubik solver. Competitive programmer. 35mm shooter.<br/>
-                        Javascript developer @ Felizz. <br />
+                        Javascript developer @ evania Media GmbH. <br />
                         <i className="fa fa-thumbs-o-up" aria-hidden="true"></i>Travel. Movie nights. Hangover (once in a while..).<br />
                     </p>
                     <div className={styles.social_account}>

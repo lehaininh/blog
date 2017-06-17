@@ -1,15 +1,14 @@
-import React from 'react';
-import styles from './travel_header.scss';
-import CSSModules from 'react-css-modules';
+import React from "react";
+import styles from "./travel_header.scss";
 
 class TravelHeader extends React.Component {
-    render() {
-        return (
-            <div styleName="header">
-                <a href='/'></a>
-            </div>
-        );
-    }
+	render() {
+		return (
+			<div className={styles.header}>
+				<a href='/'></a>
+			</div>
+		);
+	}
 }
 
-export default CSSModules(TravelHeader, styles, {allowMultiple: true});
+export default TravelHeader;

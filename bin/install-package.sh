@@ -1,4 +1,5 @@
 # bin/install-package
 cd /home/ubuntu/blog
-npm install
+sudo yarn install
+gulp production
 

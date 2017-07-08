@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/blog
+hooks:
+  AfterInstall:
+    - location: bin/install-package.sh
+      timeout: 300
+      runas: ubuntu
+  ApplicationStart:
+    - location: bin/start-app.sh
+      timeout: 300
+      runas: ubuntu

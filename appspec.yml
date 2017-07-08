@@ -7,8 +7,8 @@ hooks:
   AfterInstall:
     - location: bin/install-package.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStart:
     - location: bin/start-app.sh
       timeout: 300
-      runas: ubuntu
+      runas: root

@@ -1,4 +1,4 @@
 # deploy/start-app
 cd /home/ubuntu/blog
-forever stopall
-forever app.js
+pm2 stop all
+pm2 start app.js
